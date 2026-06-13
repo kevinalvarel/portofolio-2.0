@@ -5,7 +5,8 @@ import Lenis from "lenis";
 import { features } from "@/lib/config";
 
 const LENIS_OPTIONS = {
-  duration: 1.6,
+  duration: 1.3,
+  lerp: 0.1,
   easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
   orientation: "vertical" as const,
   gestureOrientation: "vertical" as const,

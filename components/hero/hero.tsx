@@ -1,3 +1,4 @@
+import { FadeIn, ScaleUnblur } from "../ui/motion-primitive";
 import { HeroActionButton } from "./action-button";
 import FloatingImage from "./floating-image";
 
@@ -6,7 +7,7 @@ export function Hero() {
     <section className="relative w-full">
       <div className="mx-auto w-full max-w-275 px-6 pt-44 pb-24 sm:px-10 sm:pt-56 sm:pb-32">
         <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
-          <div>
+          <FadeIn>
             <p className="text-[20px] leading-tight tracking-tight font-medium text-foreground">
               Hey
               <span aria-hidden="true" className="mx-0.5">
@@ -27,10 +28,10 @@ export function Hero() {
             <div className="mt-6">
               <HeroActionButton />
             </div>
-          </div>
-          <div className="flex justify-stretch md:justify-end">
+          </FadeIn>
+          <ScaleUnblur className="flex justify-stretch md:justify-end">
             <FloatingImage
-              imageSrc="/me.webp"
+              imageSrc="/images/me.webp"
               altText="Kevin Alvarel"
               captionText="Muhammad Kevin Alvarel"
               containerHeight="300px"
@@ -43,7 +44,7 @@ export function Hero() {
               showTooltip
               displayOverlayContent
             />
-          </div>
+          </ScaleUnblur>
         </div>
       </div>
     </section>

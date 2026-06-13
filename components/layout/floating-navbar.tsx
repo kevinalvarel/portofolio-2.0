@@ -16,11 +16,11 @@ export function FloatingNavbar() {
   const navItems = [
     {
       name: "Projects",
-      link: "#projects",
+      link: "/projects",
     },
     {
       name: "About",
-      link: "#about",
+      link: "/about",
     },
   ];
 

@@ -1,13 +1,11 @@
 "use client";
-import { Hero } from "@/components/hero/hero";
+import { About } from "@/components/about/about";
 import GradualBlurMemo from "@/components/layout/gradual-blur";
-import { Projects } from "@/components/project/project";
 
-export default function Home() {
+export default function AboutPage() {
   return (
     <main id="main-content" className="flex flex-1 flex-col gap-20 sm:gap-28">
-      <Hero />
-      <Projects withHeadline={true} viewMoreVisible={true} />
+      <About />
       <GradualBlurMemo
         target="page"
         position="bottom"
@@ -18,7 +16,6 @@ export default function Home() {
         exponential
         opacity={0.9}
       />
-      <div className="h-12 sm:h-16" />
     </main>
   );
 }

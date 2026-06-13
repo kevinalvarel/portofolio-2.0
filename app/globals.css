@@ -287,4 +287,66 @@ html[data-theme-anim="1"]::view-transition-new(root) {
   transform: scale(1.06);
 }
 
+.project-card:hover .project-card__overlay {
+  background-color: color-mix(in srgb, var(--foreground) 10%, transparent);
+}
 
+.project-card:hover .project-card__ext-icon {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.project-card__ext-icon {
+  transform: scale(0.7);
+}
+
+/* ─── Tech pill hover within card ─── */
+.project-card:hover span[class*="rounded-md"] {
+  border-color: color-mix(in srgb, var(--foreground) 14%, transparent);
+  background: color-mix(in srgb, var(--foreground) 6%, transparent);
+}
+
+/* ─── Project Detail: Hero Image ─── */
+.detail-hero-image {
+  box-shadow: 0 2px 16px -4px rgb(0 0 0 / 0.08);
+  transition: box-shadow 400ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.dark .detail-hero-image {
+  box-shadow: 0 2px 16px -4px rgb(0 0 0 / 0.5);
+}
+
+/* ─── Project Detail: Gallery Thumbnails ─── */
+.gallery-thumb {
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.04);
+  transition:
+    box-shadow 400ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 400ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.gallery-thumb:hover {
+  box-shadow:
+    0 8px 16px -6px rgb(0 0 0 / 0.1),
+    0 2px 6px -2px rgb(0 0 0 / 0.06);
+  transform: translateY(-2px);
+}
+
+.dark .gallery-thumb {
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.3);
+}
+
+.dark .gallery-thumb:hover {
+  box-shadow:
+    0 8px 16px -6px rgb(0 0 0 / 0.5),
+    0 2px 6px -2px rgb(0 0 0 / 0.3);
+}
+
+/* ─── Project Detail: Preview Embed ─── */
+.preview-embed {
+  box-shadow: 0 2px 20px -6px rgb(0 0 0 / 0.08);
+  transition: box-shadow 400ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.dark .preview-embed {
+  box-shadow: 0 2px 20px -6px rgb(0 0 0 / 0.5);
+}

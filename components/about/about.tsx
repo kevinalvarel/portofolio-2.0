@@ -1,8 +1,8 @@
 import { ImageMorph } from "./image-morph";
 import ScrollReveal from "./scroll-reveal";
 
-const PORTRAIT_SRC = "/me.webp";
-const PORTRAIT_HOVER_SRC = "/me-hover.webp";
+const PORTRAIT_SRC = "/images/me.webp";
+const PORTRAIT_HOVER_SRC = "/images/me.webp";
 
 export function About() {
   return (

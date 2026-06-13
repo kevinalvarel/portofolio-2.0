@@ -31,7 +31,7 @@ export function FadeIn({
 export function ScaleUnblur({
   children,
   delay = 0,
-  duration = 1,
+  duration = 1.1,
   className,
 }: {
   children: ReactNode;

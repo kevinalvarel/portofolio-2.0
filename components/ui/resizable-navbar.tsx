@@ -7,6 +7,7 @@ import {
   useScroll,
   useMotionValueEvent,
 } from "motion/react";
+import Link from "next/link";
 
 import React, { useRef, useState } from "react";
 
@@ -68,7 +69,7 @@ export const Navbar = ({ children, className }: NavbarProps) => {
     <motion.div
       ref={ref}
       // IMPORTANT: Change this to class of `fixed` if you want the navbar to be fixed
-      className={cn("fixed inset-x-0 top-2 z-40 w-full", className)}
+      className={cn("fixed inset-x-0 top-2.5 z-40 w-full", className)}
     >
       {React.Children.map(children, (child) =>
         React.isValidElement(child)
@@ -95,8 +96,9 @@ export const NavBody = ({ children, className, visible }: NavBodyProps) => {
       }}
       transition={{
         type: "spring",
-        stiffness: 200,
+        stiffness: 300,
         damping: 50,
+        duration: 1,
       }}
       style={{
         minWidth: "800px",
@@ -124,7 +126,7 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
       )}
     >
       {items.map((item, idx) => (
-        <a
+        <Link
           onMouseEnter={() => setHovered(idx)}
           onClick={onItemClick}
           className="relative px-4 py-2 text-neutral-600 dark:text-neutral-300"
@@ -134,11 +136,11 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
           {hovered === idx && (
             <motion.div
               layoutId="hovered"
-              className="absolute inset-0 h-full w-full rounded-full bg-foreground/10 dark:bg-foreground/10"
+              className="absolute inset-0 h-full w-full rounded-full bg-gray-100 dark:bg-neutral-800"
             />
           )}
           <span className="relative z-20">{item.name}</span>
-        </a>
+        </Link>
       ))}
     </motion.div>
   );
@@ -231,14 +233,14 @@ export const MobileNavToggle = ({
 
 export const NavbarLogo = () => {
   return (
-    <a
-      href="#"
+    <Link
+      href="/"
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black"
     >
       <span className="font-medium text-black dark:text-white">
         Kevin Alvarel
       </span>
-    </a>
+    </Link>
   );
 };
 

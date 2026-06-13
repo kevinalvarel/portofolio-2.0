@@ -1,0 +1,114 @@
+{
+  "Projects": [
+    {
+      "show": true,
+      "title": "MerdekAI - AI Chatbot",
+      "desc": [
+        "MerdekAI is an AI chatbot designed to provide users with accurate and relevant information about any topic they inquire about. The chatbot utilizes advanced natural language processing techniques to understand user queries and provide appropriate responses. Merdekai is capable of handling a wide range of topics, from general."
+      ],
+      "year": "2025",
+      "preview": "https://merdekai.my.id/",
+      "code": "",
+      "Role": "Front-end",
+      "thumbnail": "/images/projects/merdekai1.png",
+      "images": [
+        "/images/projects/merdekai1.png",
+        "/images/projects/merdekai2.png"
+      ],
+      "tech": [
+        "NextJS",
+        "Typescript",
+        "Express",
+        "Better Auth",
+        "AceternityUI"
+      ],
+      "slug": "merdekai",
+      "category": [3]
+    },
+    {
+      "show": true,
+      "title": "Dicoding Community Network",
+      "desc": [
+        "DCN Universitas Al-Khairiyah is a community network platform designed to learn and get certifications from Dicoding. This platform is built using Next.js",
+        "."
+      ],
+      "year": "2025",
+      "preview": "https://dcnunival.my.id/",
+      "code": "",
+      "Role": "Fullstack",
+      "thumbnail": "/images/projects/dcn1.png",
+      "images": ["/images/projects/dcn1.png", "/images/projects/dcn2.png"],
+      "tech": ["NextJS", "JavaScript", "Tailwind CSS", "React"],
+      "slug": "dicoding-community-network",
+      "category": [2]
+    },
+    {
+      "show": true,
+      "title": "Dipelajarin Code Editor",
+      "desc": [
+        "Dipelajarin Code Editor is a web-based code editor designed for educational purposes. It allows users to write, edit, and run code snippets in various programming languages.",
+        "The editor is built using Next.js and provides a user-friendly interface with syntax highlighting, code completion, and real-time collaboration features."
+      ],
+      "year": "2025",
+      "preview": "https://dipelajarin.vercel.app/",
+      "code": "",
+      "Role": "Fullstack",
+      "thumbnail": "/images/projects/Pelajarin1.png",
+      "images": [
+        "/images/projects/Pelajarin1.png",
+        "/images/projects/Pelajarin2.png"
+      ],
+      "tech": [
+        "NextJS",
+        "Typescript",
+        "Drizzle",
+        "Neon PostgresQL",
+        "Monaco Editor"
+      ],
+      "slug": "dipelajarin-code-editor",
+      "category": [2]
+    },
+    {
+      "show": true,
+      "title": "Neo Photobooth",
+      "desc": [
+        "Neo Photobooth is a web-based application designed for photobooth purposes. It allows users to take photos and print them out.",
+        "The application is built using Next.js and provides a user-friendly interface with real-time collaboration features."
+      ],
+      "year": "2026",
+      "preview": "",
+      "code": "",
+      "Role": "Front-end",
+      "thumbnail": "/images/projects/photobooth1.png",
+      "images": [
+        "/images/projects/photobooth1.png",
+        "/images/projects/photobooth2.png"
+      ],
+      "tech": ["NextJS", "Typescript", "Tailwind CSS", "Zustand"],
+      "slug": "neo-photobooth",
+      "category": [3]
+    },
+    {
+      "show": true,
+      "title": "SMKS YP 17 Cilegon",
+      "desc": [
+        "SMKS YP 17 Cilegon is a web-based application designed for educational purposes. It allows users to access information about the school, such as the curriculum, extracurricular activities, and contact information.",
+        "The application is built using Next.js and provides a user-friendly interface with real-time collaboration features."
+      ],
+      "year": "2026",
+      "code": "",
+      "Role": "Back-end",
+      "thumbnail": "/images/projects/smks1.png",
+      "images": ["/images/projects/smks1.png", "/images/projects/smks2.png"],
+      "tech": [
+        "NextJS",
+        "Typescript",
+        "Drizzle",
+        "Neon PostgresQL",
+        "Better Auth"
+      ],
+      "slug": "smks-yp-17-cilegon",
+      "category": [3]
+    }
+  ]
+}

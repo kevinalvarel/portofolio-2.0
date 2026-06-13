@@ -1,113 +1,9 @@
-import {
-  ArrowRight,
-  Bot,
-  Compass,
-  Layers,
-  LineChart,
-  Sparkles,
-  Wand2,
-} from "lucide-react";
-import type { ComponentType, ReactNode } from "react";
+import { ArrowRight, ArrowUpRight, ExternalLink } from "lucide-react";
+import type { ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
-
+import { PROJECTS, type Project } from "@/types/projects";
 import { FadeIn } from "@/components/ui/motion-primitive";
-
-/**
- * Project imagery below is mockup-only. All visuals are sourced from
- * Dribbble and credit belongs to the original creators on dribbble.com.
- * Replace these with your own work before shipping.
- */
-
-type ProjectCardProps = {
-  id: string;
-  icon: ComponentType<{ className?: string }>;
-  iconLabel: string;
-  title: string;
-  description: string;
-  meta: string;
-  imageRatio: number;
-  image: string;
-  imageAlt: string;
-};
-
-const PROJECTS: ProjectCardProps[] = [
-  {
-    id: "loom",
-    icon: Sparkles,
-    iconLabel: "LOOM",
-    title:
-      "An AI writing companion that thinks alongside you, allowing you to capture ideas, edits, and drafts in one focused space.",
-    description:
-      "I designed Loom, a focused writing surface where ideas, edits, and drafts coexist without the chat clutter.",
-    meta: "Design Engineer, 2024",
-    imageRatio: 752 / 497,
-    image: "/me.webp",
-    imageAlt: "Loom AI writing companion mockup",
-  },
-  {
-    id: "atlas",
-    icon: Compass,
-    iconLabel: "Atlas Studio",
-    title: "A two week brand and product sprint for a creative studio.",
-    description:
-      "End to end identity, marketing site, and a small product surface designed to feel quietly confident across every touchpoint.",
-    meta: "Product & Brand Designer, 2025",
-    imageRatio: 1024 / 768,
-    image: "/me.webp",
-    imageAlt: "Atlas Studio brand and product sprint mockup",
-  },
-  {
-    id: "rhythm",
-    icon: LineChart,
-    iconLabel: "Rhythm",
-    title: "Calm analytics for indie founders.",
-    description:
-      "A weekly digest that turns raw product data into a simple narrative. Built so you can read it on a Sunday with coffee.",
-    meta: "Founder & Designer, 2024",
-    imageRatio: 1024 / 768,
-    image: "/me.webp",
-    imageAlt: "Rhythm calm analytics mockup",
-  },
-  {
-    id: "groove",
-    icon: Wand2,
-    iconLabel: "Groove",
-    title:
-      "Reimagining the booking flow for a music school, asisting thousands of students in finding the right lessons.",
-    description:
-      "I led a redesign of the lesson booking experience, cutting drop off in half and making the schedule feel like a calendar people actually want to open.",
-    meta: "Lead Designer, 2023",
-    imageRatio: 1024 / 768,
-    image: "/me.webp",
-    imageAlt: "Groove music school booking flow mockup",
-  },
-  {
-    id: "fieldnote",
-    icon: Layers,
-    iconLabel: "Fieldnote",
-    title:
-      "A pocket sized research tool for design teams that want to get out of their docs and into the world.",
-    description:
-      "Capture quotes, tag patterns, and synthesize themes in one place. The interface stays out of the way so the thinking can happen.",
-    meta: "Design Engineer, 2024",
-    imageRatio: 1024 / 768,
-    image: "/me.webp",
-    imageAlt: "Fieldnote pocket sized research tool mockup",
-  },
-  {
-    id: "talkback",
-    icon: Bot,
-    iconLabel: "Talkback",
-    title: "A friendlier interface for talking to language models.",
-    description:
-      "An exploration of how AI chat could feel less like a terminal and more like a conversation with a curious friend.",
-    meta: "Independent Project, 2025",
-    imageRatio: 1024 / 768,
-    image: "/me.webp",
-    imageAlt: "Talkback friendlier AI chat interface mockup",
-  },
-];
 
 export type ProjectsProps = {
   withHeadline?: boolean;
@@ -137,7 +33,7 @@ export function Projects({
 
         <div className="columns-1 gap-6 md:columns-2 md:gap-7">
           {items.map((project, index) => (
-            <ProjectCard key={project.id} project={project} index={index} />
+            <ProjectCard key={project.slug} project={project} index={index} />
           ))}
         </div>
 
@@ -164,54 +60,79 @@ function ProjectCard({
   project,
   index,
 }: {
-  project: ProjectCardProps;
+  project: Project;
   index: number;
 }): ReactNode {
-  const Icon = project.icon;
   return (
     <FadeIn
       delay={Math.min(index * 0.06, 0.3)}
       className="mb-6 break-inside-avoid md:mb-7"
     >
-      <article className="project-card flex cursor-pointer flex-col gap-4 rounded-3xl border border-foreground/8 bg-background p-3 sm:p-3.5">
-        <header className="flex items-center gap-2.5 px-1 pt-2">
-          <span className="border-foreground/10 inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border bg-background">
-            <Icon className="h-3.5 w-3.5 text-foreground" aria-hidden="true" />
-          </span>
-          <span className="text-sm font-medium tracking-tight text-foreground">
-            {project.iconLabel}
-          </span>
-        </header>
+      <Link href={`/projects/${project.slug}`} className="block">
+        <article className="project-card flex cursor-pointer flex-col gap-0 rounded-3xl border border-foreground/8 bg-background p-3 sm:p-3.5">
+          {/* ── Thumbnail ── */}
+          <div
+            className="project-card__image ring-foreground/5 relative w-full overflow-hidden rounded-2xl bg-foreground/5 ring-1"
+            style={{ aspectRatio: "16 / 10" }}
+          >
+            <div className="project-card__image-inner">
+              <Image
+                src={project.thumbnail}
+                alt={project.title}
+                fill
+                sizes="(min-width: 1024px) 540px, (min-width: 768px) 45vw, 100vw"
+                className="object-cover"
+                priority={index < 2}
+              />
+            </div>
 
-        <div
-          className="project-card__image ring-foreground/5 relative w-full overflow-hidden rounded-2xl bg-foreground/5 ring-1"
-          style={{ aspectRatio: project.imageRatio }}
-        >
-          <div className="project-card__image-inner">
-            <Image
-              src={project.image}
-              alt={project.imageAlt}
-              fill
-              sizes="(min-width: 1024px) 540px, (min-width: 768px) 45vw, 100vw"
-              className="object-cover"
-              priority={index < 2}
-            />
+            {/* ── Hover overlay ── */}
+            <div className="project-card__overlay pointer-events-none absolute inset-0 flex items-center justify-center rounded-2xl bg-foreground/0 transition-all duration-500">
+              <span className="project-card__ext-icon inline-flex h-10 w-10 items-center justify-center rounded-full bg-background/90 text-foreground opacity-0 shadow-lg backdrop-blur-sm transition-all duration-500">
+                <ExternalLink className="h-4 w-4" aria-hidden="true" />
+              </span>
+            </div>
           </div>
-        </div>
 
-        <div className="flex flex-col gap-2.5 px-1 pb-1">
-          <h3 className="text-[20px] font-medium leading-[1.2] tracking-tight text-foreground sm:text-[22px]">
-            {project.title}
-          </h3>
-          <p className="text-[14px] leading-normal tracking-tight text-foreground/65 sm:text-[15px]">
-            {project.description}
-          </p>
-        </div>
+          {/* ── Content ── */}
+          <div className="flex flex-col gap-3 px-1.5 pt-4 pb-2">
+            {/* Title + arrow */}
+            <div className="flex items-start justify-between gap-3">
+              <h3 className="text-[18px] font-semibold leading-[1.25] tracking-tight text-foreground sm:text-[20px]">
+                {project.title}
+              </h3>
+              <ArrowUpRight
+                className="mt-0.5 h-4 w-4 shrink-0 text-foreground/40 transition-colors duration-300"
+                aria-hidden="true"
+              />
+            </div>
 
-        <p className="px-1 pb-2 text-[12px] tracking-tight text-foreground/50">
-          {project.meta}
-        </p>
-      </article>
+            {/* Description */}
+            <p className="line-clamp-2 text-[13.5px] leading-[1.55] tracking-tight text-foreground/55 sm:text-[14.5px]">
+              {project.desc[0]}
+            </p>
+
+            {/* Meta: Role + Year */}
+            <div className="flex items-center gap-2 text-[12px] tracking-tight text-foreground/45">
+              <span className="font-medium">{project.Role}</span>
+              <span className="inline-block h-0.5 w-0.5 rounded-full bg-foreground/30" />
+              <span>{project.year}</span>
+            </div>
+
+            {/* Tech stack pills */}
+            <div className="flex flex-wrap gap-1.5 pt-0.5">
+              {project.tech.map((t) => (
+                <span
+                  key={t}
+                  className="inline-flex items-center rounded-md border border-foreground/8 bg-foreground/[0.03] px-2 py-0.5 text-[11px] font-medium tracking-tight text-foreground/55 transition-colors duration-300"
+                >
+                  {t}
+                </span>
+              ))}
+            </div>
+          </div>
+        </article>
+      </Link>
     </FadeIn>
   );
 }
