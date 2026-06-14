@@ -9,7 +9,7 @@ export function Hero() {
         <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
           <FadeIn>
             <p className="text-[20px] leading-tight tracking-tight font-medium text-foreground">
-              Hey
+              Hi
               <span aria-hidden="true" className="mx-0.5">
                 👋
               </span>
@@ -17,13 +17,13 @@ export function Hero() {
             </p>
 
             <h1 className="text-[2.75rem] font-medium leading-[1.05] tracking-tight text-foreground md:text-[2.5rem] lg:text-[3.65rem]">
-              <span className="block whitespace-nowrap">Student</span>
+              <span className="block whitespace-nowrap"> Student &</span>
               <span className="block whitespace-nowrap">Software Engineer</span>
             </h1>
 
             <p className="max-w-[34ch] text-[22px] leading-[1.4] tracking-tight text-foreground/65">
-              Independent engineer focused on interfaces that feel calm,
-              considered, and quietly fast.
+              Informatics student who is passionate about building technological
+              solutions that make a real impact.
             </p>
             <div className="mt-6">
               <HeroActionButton />

@@ -16,6 +16,10 @@ import { ThemeToggle } from "../ui/theme-toggle";
 export function FloatingNavbar() {
   const navItems = [
     {
+      name: "Home",
+      link: "/",
+    },
+    {
       name: "Projects",
       link: "/projects",
     },

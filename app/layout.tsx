@@ -6,6 +6,7 @@ import { Fraunces, Geist, Geist_Mono } from "next/font/google";
 import type { ReactNode } from "react";
 import "./globals.css";
 import { FloatingNavbar } from "@/components/layout/floating-navbar";
+import Footer from "@/components/layout/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -88,6 +89,7 @@ export default function RootLayout({
           <PageBackdrop />
           <FloatingNavbar />
           {children}
+          <Footer />
         </Providers>
       </body>
     </html>
