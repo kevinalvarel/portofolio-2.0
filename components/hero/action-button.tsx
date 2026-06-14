@@ -20,8 +20,11 @@ export function HeroActionButton(): ReactNode {
           transition={{ layout: { duration: 0.55, ease: EASE } }}
         >
           <Link
-            href="/projects"
+            href={"/docs/curriculum-vitae.pdf"}
+            target="_blank"
+            rel="noopener noreferrer"
             className="border border-foreground/5 focus-ring group inline-flex cursor-pointer items-center gap-2 rounded-xl bg-foreground px-5 py-2.5 text-sm font-medium text-background shadow-2xl transition-colors hover:bg-foreground"
+            download
           >
             Download CV
             <ArrowDown

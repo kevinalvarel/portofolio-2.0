@@ -12,7 +12,6 @@ type Entry = {
   brand?: string;
 };
 
-const API_KEY = process.env.BRAND_FETCH_API_KEY;
 const ENTRIES: Entry[] = [
   {
     company: "Google Developer Group",
@@ -22,7 +21,7 @@ const ENTRIES: Entry[] = [
     brand: "#5E6AD2",
   },
   {
-    company: "FS Cohort 26 DBS Foundations",
+    company: "Coding Camp Cohort 26",
     role: "Fullstack Engineer",
     period: "Jan 2026 – June 2026",
     slug: "dbs.com/w/800/h/809/symbol",
@@ -160,7 +159,7 @@ function CompanyLogo({ entry }: { entry: Entry }): ReactNode {
     >
       {entry.slug ? (
         <img
-          src={`https://cdn.brandfetch.io/domain/${entry.slug}?c=${API_KEY}`}
+          src={`https://cdn.brandfetch.io/domain/${entry.slug}?c=1idql4fKrhV_Xo6eYCV`}
           alt="Logo by Brandfetch"
           width={24}
           height={24}
