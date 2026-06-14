@@ -110,6 +110,32 @@
       ],
       "slug": "smks-yp-17-cilegon",
       "category": [3]
+    },
+    {
+      "show": true,
+      "title": "Kaloriku",
+      "desc": [
+        "Kaloriku is a web-based application designed to help users track their daily calorie intake and weight loss progress.",
+        "The application is built using Next.js and provides a user-friendly interface with real-time collaboration features."
+      ],
+      "year": "2026",
+      "preview": "capstone-kaloriku.vercel.app",
+      "code": "",
+      "Role": "Front-end",
+      "thumbnail": "/images/projects/kaloriku1.png",
+      "images": [
+        "/images/projects/kaloriku1.png",
+        "/images/projects/kaloriku2.png"
+      ],
+      "tech": [
+        "NextJS",
+        "Typescript",
+        "Supabase",
+        "Grok AI",
+        "Google Cloud Console"
+      ],
+      "slug": "kaloriku",
+      "category": [3]
     }
   ]
 }

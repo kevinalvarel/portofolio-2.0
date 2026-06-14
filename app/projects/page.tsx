@@ -1,3 +1,5 @@
+"use client";
+import GradualBlurMemo from "@/components/layout/gradual-blur";
 import { Projects } from "@/components/project/project";
 import { FadeIn } from "@/components/ui/motion-primitive";
 
@@ -16,6 +18,16 @@ export default function ProjectsPage() {
         </FadeIn>
         <Projects withHeadline={false} viewMoreVisible={false} />
       </section>
+      <GradualBlurMemo
+        target="page"
+        position="bottom"
+        height="9rem"
+        strength={2.5}
+        divCount={7}
+        curve="bezier"
+        exponential
+        opacity={0.9}
+      />
     </main>
   );
 }
