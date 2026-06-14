@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const footerNavigation = {
   navigate: {
-    title: "Navigasi",
+    title: "Important Link",
     links: [
       { name: "Home", href: "/" },
       { name: "Projects", href: "/projects" },
@@ -12,7 +12,7 @@ const footerNavigation = {
     ],
   },
   connect: {
-    title: "Terhubung",
+    title: "Get in Touch",
     links: [
       {
         name: "GitHub",
@@ -21,12 +21,7 @@ const footerNavigation = {
       },
       {
         name: "LinkedIn",
-        href: "https://linkedin.com/in/kevinalvarel",
-        external: true,
-      },
-      {
-        name: "Email",
-        href: "mailto:hello@kevinalvarel.dev",
+        href: "https://linkedin.com/in/muhammadkevinalvarel",
         external: true,
       },
     ],
@@ -62,7 +57,8 @@ function Footer() {
               </Link>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                 Software Engineer &amp; Informatics student at Universitas
-                Al-Khairiyah, passionate about{" "}
+                Al-Khairiyah, passionate about
+                <br />
                 <span className="font-medium text-foreground">
                   Front-End Engineering
                 </span>{" "}

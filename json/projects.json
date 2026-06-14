@@ -136,6 +136,35 @@
       ],
       "slug": "kaloriku",
       "category": [3]
+    },
+    {
+      "show": true,
+      "title": "Jatahin",
+      "desc": [
+        "Jatahin is a web-based application designed to help users manage their money.",
+        "The application is built using Tanstack Start, Drizzle and provides a user-friendly interface with real-time collaboration features."
+      ],
+      "year": "2026",
+      "preview": "https://jatahin-co.netlify.app/",
+      "code": "",
+      "Role": "Fullstack",
+      "thumbnail": "/images/projects/jatahin1.png",
+      "images": [
+        "/images/projects/jatahin1.png",
+        "/images/projects/jatahin2.png"
+      ],
+      "tech": [
+        "Tanstack Start",
+        "Typescript",
+        "Drizzle",
+        "Neon PostgresQL",
+        "Better Auth",
+        "Supabase",
+        "Gemini AI",
+        "Google AI Studio"
+      ],
+      "slug": "jatahin",
+      "category": [3]
     }
   ]
 }
