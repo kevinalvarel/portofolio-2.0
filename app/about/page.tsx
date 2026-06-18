@@ -2,17 +2,10 @@
 import { About } from "@/components/about/about";
 import { Experience } from "@/components/about/experience";
 import ImageSpan from "@/components/about/image-span";
-import OrbitStacks from "@/components/about/stack";
+import Skills from "@/components/about/skills";
 import GradualBlurMemo from "@/components/layout/gradual-blur";
 
-const images = [
-  "https://picsum.photos/300/300?grayscale&random=1",
-  "https://picsum.photos/300/300?grayscale&random=2",
-  "https://picsum.photos/300/300?grayscale&random=3",
-  "https://picsum.photos/300/300?grayscale&random=4",
-  "https://picsum.photos/300/300?grayscale&random=5",
-  "https://picsum.photos/300/300?grayscale&random=6",
-];
+
 
 export default function AboutPage() {
   return (
@@ -23,6 +16,7 @@ export default function AboutPage() {
           <ImageSpan />
           <Experience />
         </div>
+        <Skills />
       </section>
       <GradualBlurMemo
         target="page"
