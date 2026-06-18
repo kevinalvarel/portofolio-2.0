@@ -110,7 +110,6 @@ const skillCategories = {
 };
 
 
-
 function SkillCard({ skill, isSelected, onClick }: skillCategoriesProps) {
     const Icon = skill.icon;
 
@@ -177,7 +176,7 @@ function SkillDetails({ selectedSkill }: SkillDetailsProps) {
         >
             {/* Languages & Frameworks Section */}
             <motion.div
-                className="bg-white/40 border border-foreground rounded-2xl p-8 shadow-sm"
+                className="bg-background/40 border border-foreground rounded-2xl p-8 shadow-sm dark:bg-foreground/30"
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.2 }}
@@ -213,7 +212,7 @@ function SkillDetails({ selectedSkill }: SkillDetailsProps) {
 
             {/* Tools Section */}
             <motion.div
-                className="bg-white/20 border border-foreground rounded-2xl p-8"
+                className="bg-background/40 border border-foreground rounded-2xl p-8 shadow-sm dark:bg-foreground/30"
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.4 }}
