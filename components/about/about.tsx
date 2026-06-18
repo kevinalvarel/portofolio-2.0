@@ -1,5 +1,5 @@
-import TextType from "@/components/ui/typing-text";
 import { ImageMorph } from "./image-morph";
+import { FadeIn, ScaleUnblur } from "../ui/motion-primitive";
 
 const PORTRAIT_SRC = "/images/me.webp";
 const PORTRAIT_HOVER_SRC = "/images/me-hovered.webp";
@@ -17,7 +17,10 @@ export function About() {
       <section className="mx-auto w-full max-w-7xl px-6 pt-20 pb-16 sm:px-10 sm:pt-28 sm:pb-24 ">
         <div className="mx-auto w-full max-w-275 px-6 pt-44 pb-24 sm:px-10 sm:pt-56 sm:pb-32">
           <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
-            <div className="flex justify-stretch md:justify-end">
+            <ScaleUnblur
+              delay={0.3}
+              className="flex justify-stretch md:justify-end"
+            >
               <div className="relative aspect-square w-full md:max-w-105 overflow-hidden rounded-4xl border border-foreground/8 bg-background p-1.5 shadow-sm">
                 <div className="relative h-full w-full overflow-hidden rounded-[1.6rem] ">
                   <ImageMorph
@@ -27,8 +30,11 @@ export function About() {
                   />
                 </div>
               </div>
-            </div>
-            <div className="rounded-4xl border border-foreground/5 bg-foreground/1.5 p-8 sm:p-12 dark:bg-foreground/3">
+            </ScaleUnblur>
+            <FadeIn
+              delay={0.3}
+              className="rounded-4xl border border-foreground/5 bg-foreground/1.5 p-8 sm:p-12 dark:bg-foreground/3"
+            >
               <h1 className="font-serif text-[1.75rem] font-medium tracking-tight text-foreground sm:text-[2rem]">
                 Hello! I&rsquo;m{" "}
                 <span className="border-b border-foreground/30 pb-0.5">
@@ -63,7 +69,7 @@ export function About() {
                   that make a real impact.
                 </p>
               </div>
-            </div>
+            </FadeIn>
           </div>
         </div>
       </section>

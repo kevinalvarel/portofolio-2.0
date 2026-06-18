@@ -7,7 +7,7 @@ const ImageSpan = () => {
   return (
     <div className="px-5 w-full">
       <div className="font-medium text-lg mb-6">Educations</div>
-      <div className="border-foreground/5 bg-foreground/2 dark:bg-foreground/5 relative overflow-hidden rounded-4xl border px-2 pt-2 sm:px-4 sm:pt-4">
+      <div className="border-foreground/5 bg-foreground/2 dark:bg-foreground/5 relative overflow-hidden rounded-4xl border px-2 pt-2 pb-2 sm:px-4 sm:pt-4 sm:pb-4">
         <h2 className="font-semibold text-xl">Universitas Al-Khairiyah</h2>
         <h3 className="text-md font-normal mb-3">
           S1 Teknik Informatika | Computer Science

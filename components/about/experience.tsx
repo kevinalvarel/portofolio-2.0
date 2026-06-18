@@ -58,7 +58,7 @@ export function Experience(): ReactNode {
   return (
     <div className="flex flex-col gap-6">
       <h3 className="text-foreground text-lg font-semibold tracking-tight">
-        External
+        Experience
       </h3>
       <div
         className={`border-foreground/5 bg-foreground/2 dark:bg-foreground/5 relative overflow-hidden rounded-4xl border px-2 pt-2 sm:px-4 sm:pt-4 ${

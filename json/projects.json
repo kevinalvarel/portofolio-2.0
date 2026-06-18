@@ -165,6 +165,25 @@
       ],
       "slug": "jatahin",
       "category": [3]
+    },
+    {
+      "show": true,
+      "title": "Old Portofolio",
+      "desc": [
+        "My old portofolio. It is built using React and provides a user-friendly interface."
+      ],
+      "year": "2025",
+      "preview": "https://kevinalvarel.my.id/",
+      "code": "",
+      "Role": "Fullstack",
+      "thumbnail": "/images/projects/old-porto1.png",
+      "images": [
+        "/images/projects/old-porto1.png",
+        "/images/projects/old-porto2.png"
+      ],
+      "tech": ["ReactJS", "JavaScript", "Vercel", "GSAP", "Motion"],
+      "slug": "old-portofolio",
+      "category": [3]
     }
   ]
 }
