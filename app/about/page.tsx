@@ -23,21 +23,6 @@ export default function AboutPage() {
           <ImageSpan />
           <Experience />
         </div>
-        <OrbitStacks
-          images={images}
-          shape="ellipse"
-          radiusX={340}
-          radiusY={80}
-          rotation={-8}
-          duration={30}
-          itemSize={80}
-          responsive={true}
-          radius={360}
-          direction="normal"
-          fill
-          showPath
-          paused={false}
-        />
       </section>
       <GradualBlurMemo
         target="page"

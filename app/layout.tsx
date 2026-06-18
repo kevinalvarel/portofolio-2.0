@@ -7,9 +7,6 @@ import type { ReactNode } from "react";
 import "./globals.css";
 import { FloatingNavbar } from "@/components/layout/floating-navbar";
 import Footer from "@/components/layout/footer";
-import { cn } from "@/lib/utils";
-
-const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
