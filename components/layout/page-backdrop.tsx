@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { ShaderFlow } from "@/components/shaders/shader-flow";
+import { ShaderFlow } from "@/components/animations/shader-flow";
 
 export function PageBackdrop(): ReactNode {
   return (

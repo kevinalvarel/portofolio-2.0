@@ -6,8 +6,8 @@ export function Hero() {
   return (
     <section className="relative w-full">
       <div className="mx-auto w-full max-w-275 px-6 pt-44 pb-24 sm:px-10 sm:pt-56 sm:pb-32">
-        <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
-          <FadeIn>
+        <div className="flex flex-col items-center gap-8 md:flex-row items-center justify-between">
+          <FadeIn className="flex flex-col gap-5 text-center md:text-left">
             <p className="text-[20px] leading-tight tracking-tight font-medium text-foreground">
               Hi
               <span aria-hidden="true" className="mx-0.5">
@@ -25,11 +25,11 @@ export function Hero() {
               Informatics student who is passionate about building technological
               solutions that make a real impact.
             </p>
-            <div className="mt-6">
+            <div className="mt-6 flex items-center justify-center md:justify-start">
               <HeroActionButton />
             </div>
           </FadeIn>
-          <ScaleUnblur className="flex justify-stretch md:justify-end">
+          <ScaleUnblur className="flex items-center justify-center">
             <FloatingImage
               imageSrc="/images/me.webp"
               altText="Kevin Alvarel"
