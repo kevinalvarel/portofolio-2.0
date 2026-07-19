@@ -2,6 +2,70 @@
   "Projects": [
     {
       "show": true,
+      "title": "SEMTIK26 - Seminar Informatika 2026",
+      "desc": [
+        "SEMTIK26 adalah website resmi untuk Seminar Nasional Teknologi Informasi dan Ilmu Komputer (SEMTIK) 2026 yang diselenggarakan oleh HIMATIKOM UNIVERSITAS AL-KHAIRIYAH CILEGON. Website ini berfungsi sebagai media informasi, pendaftaran, dan pengelolaan seminar."
+      ],
+      "year": "2025",
+      "preview": "https://semtik.vercel.app/",
+      "code": "",
+      "Role": "Fullstack",
+      "thumbnail": "/images/projects/semtik1.png",
+      "images": [
+        "/images/projects/semtik1.png",
+        "/images/projects/semtik2.png"
+      ],
+      "tech": [
+        "NextJS",
+        "Typescript",
+        "React Hook Form",
+        "Drizzle ORM",
+        "Neon PostgresQL",
+        "Shadcn",
+        "Motion"
+      ],
+      "slug": "semtik26",
+      "category": [3]
+    },
+    {
+      "show": true,
+      "title": "Google Cloud Arcade Tracker",
+      "desc": [
+        "Google Cloud Arcade Tracker is a web-based application designed to help users track their progress in the Google Cloud Arcade program.",
+        "The application is built using Next.js and provides a user-friendly interface with real-time collaboration features."
+      ],
+      "year": "2025",
+      "preview": "https://arcade-facilitator-eta.vercel.app/",
+      "code": "",
+      "Role": "Fullstack",
+      "thumbnail": "/images/projects/arcade1.png",
+      "images": [
+        "/images/projects/arcade1.png",
+        "/images/projects/arcade2.png"
+      ],
+      "tech": ["NextJS", "Typescript", "React Hook Form", "Shadcn", "Motion"],
+      "slug": "arcade-tracker",
+      "category": [3]
+    },
+    {
+      "show": true,
+      "title": "Dicoding Community Network",
+      "desc": [
+        "DCN Universitas Al-Khairiyah is a community network platform designed to learn and get certifications from Dicoding. This platform is built using Next.js",
+        "."
+      ],
+      "year": "2025",
+      "preview": "https://dcnunival.my.id/",
+      "code": "",
+      "Role": "Fullstack",
+      "thumbnail": "/images/projects/dcn1.png",
+      "images": ["/images/projects/dcn1.png", "/images/projects/dcn2.png"],
+      "tech": ["NextJS", "JavaScript", "Tailwind CSS", "React"],
+      "slug": "dicoding-community-network",
+      "category": [2]
+    },
+    {
+      "show": true,
       "title": "MerdekAI - AI Chatbot",
       "desc": [
         "MerdekAI is an AI chatbot designed to provide users with accurate and relevant information about any topic they inquire about. The chatbot utilizes advanced natural language processing techniques to understand user queries and provide appropriate responses. Merdekai is capable of handling a wide range of topics, from general."
@@ -25,23 +89,7 @@
       "slug": "merdekai",
       "category": [3]
     },
-    {
-      "show": true,
-      "title": "Dicoding Community Network",
-      "desc": [
-        "DCN Universitas Al-Khairiyah is a community network platform designed to learn and get certifications from Dicoding. This platform is built using Next.js",
-        "."
-      ],
-      "year": "2025",
-      "preview": "https://dcnunival.my.id/",
-      "code": "",
-      "Role": "Fullstack",
-      "thumbnail": "/images/projects/dcn1.png",
-      "images": ["/images/projects/dcn1.png", "/images/projects/dcn2.png"],
-      "tech": ["NextJS", "JavaScript", "Tailwind CSS", "React"],
-      "slug": "dicoding-community-network",
-      "category": [2]
-    },
+
     {
       "show": true,
       "title": "Dipelajarin Code Editor",
