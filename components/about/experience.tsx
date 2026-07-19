@@ -35,10 +35,10 @@ const ENTRIES: Entry[] = [
     brand: "#4285F4",
   },
   {
-    company: "Dicoding",
+    company: "Dicoding Indonesia",
     role: "Community Builder",
     period: "Nov 2025 – June 2026",
-    slug: "dicoding.com",
+    slug: "dicoding.net",
     brand: "#5E6AD2",
   },
 ];
