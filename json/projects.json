@@ -118,6 +118,25 @@
     },
     {
       "show": true,
+      "title": "CV Alfa Barokah Jaya",
+      "desc": [
+        "Simple Company Profile. It is built using React and provides a responsive design."
+      ],
+      "year": "2026",
+      "preview": "https://alfabarokahjaya-compro.vercel.app/",
+      "code": "",
+      "Role": "Frontend",
+      "thumbnail": "/images/projects/alfabarokahjaya1.png",
+      "images": [
+        "/images/projects/alfabarokahjaya1.png",
+        "/images/projects/alfabarokahjaya2.png"
+      ],
+      "tech": ["NextJS", "Typescript", "Vercel", "Tailwind CSS"],
+      "slug": "alfa-barokah-jaya",
+      "category": [3]
+    },
+    {
+      "show": true,
       "title": "Neo Photobooth",
       "desc": [
         "Neo Photobooth is a web-based application designed for photobooth purposes. It allows users to take photos and print them out.",
@@ -134,29 +153,6 @@
       ],
       "tech": ["NextJS", "Typescript", "Tailwind CSS", "Zustand"],
       "slug": "neo-photobooth",
-      "category": [3]
-    },
-    {
-      "show": true,
-      "title": "SMKS YP 17 Cilegon",
-      "desc": [
-        "SMKS YP 17 Cilegon is a web-based application designed for educational purposes. It allows users to access information about the school, such as the curriculum, extracurricular activities, and contact information.",
-        "The application is built using Next.js and provides a user-friendly interface with real-time collaboration features."
-      ],
-      "year": "2026",
-      "preview": "",
-      "code": "",
-      "Role": "Back-end",
-      "thumbnail": "/images/projects/smks1.png",
-      "images": ["/images/projects/smks1.png", "/images/projects/smks2.png"],
-      "tech": [
-        "NextJS",
-        "Typescript",
-        "Drizzle",
-        "Neon PostgresQL",
-        "Better Auth"
-      ],
-      "slug": "smks-yp-17-cilegon",
       "category": [3]
     },
     {
