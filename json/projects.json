@@ -6,7 +6,7 @@
       "desc": [
         "SEMTIK26 adalah website resmi untuk Seminar Nasional Teknologi Informasi dan Ilmu Komputer (SEMTIK) 2026 yang diselenggarakan oleh HIMATIKOM UNIVERSITAS AL-KHAIRIYAH CILEGON. Website ini berfungsi sebagai media informasi, pendaftaran, dan pengelolaan seminar."
       ],
-      "year": "2025",
+      "year": "2026",
       "preview": "https://semtik.vercel.app/",
       "code": "",
       "Role": "Fullstack",
@@ -25,7 +25,9 @@
         "Motion"
       ],
       "slug": "semtik26",
-      "category": [3]
+      "category": [
+        3
+      ]
     },
     {
       "show": true,
@@ -34,7 +36,7 @@
         "Google Cloud Arcade Tracker is a web-based application designed to help users track their progress in the Google Cloud Arcade program.",
         "The application is built using Next.js and provides a user-friendly interface with real-time collaboration features."
       ],
-      "year": "2025",
+      "year": "2026",
       "preview": "https://arcade-facilitator-eta.vercel.app/",
       "code": "",
       "Role": "Fullstack",
@@ -43,9 +45,46 @@
         "/images/projects/arcade1.png",
         "/images/projects/arcade2.png"
       ],
-      "tech": ["NextJS", "Typescript", "React Hook Form", "Shadcn", "Motion"],
+      "tech": [
+        "NextJS",
+        "Typescript",
+        "React Hook Form",
+        "Shadcn",
+        "Motion"
+      ],
       "slug": "arcade-tracker",
-      "category": [3]
+      "category": [
+        3
+      ]
+    },
+    {
+      "show": true,
+      "title": "Hospital Nutrition Tracking System",
+      "desc": [
+        "Hospital Nutrition Tracking System is a web-based application designed to help users track their daily food intake for patients in a hospital.",
+        "The application is built using Next.js and provides a user-friendly interface with real-time collaboration features."
+      ],
+      "year": "2026",
+      "code": "",
+      "Role": "Fullstack",
+      "thumbnail": "/images/projects/hospital1.png",
+      "images": [
+        "/images/projects/hospital.png",
+        "/images/projects/hospital2.png"
+      ],
+      "tech": [
+        "NextJS",
+        "Typescript",
+        "React Hook Form",
+        "Shadcn",
+        "Better Auth",
+        "PostgreSQL",
+        "Drizzle ORM"
+      ],
+      "slug": "hospital-nutrition-tracking",
+      "category": [
+        3
+      ]
     },
     {
       "show": true,
@@ -59,10 +98,20 @@
       "code": "",
       "Role": "Fullstack",
       "thumbnail": "/images/projects/dcn1.png",
-      "images": ["/images/projects/dcn1.png", "/images/projects/dcn2.png"],
-      "tech": ["NextJS", "JavaScript", "Tailwind CSS", "React"],
+      "images": [
+        "/images/projects/dcn1.png",
+        "/images/projects/dcn2.png"
+      ],
+      "tech": [
+        "NextJS",
+        "JavaScript",
+        "Tailwind CSS",
+        "React"
+      ],
       "slug": "dicoding-community-network",
-      "category": [2]
+      "category": [
+        2
+      ]
     },
     {
       "show": true,
@@ -87,9 +136,10 @@
         "AceternityUI"
       ],
       "slug": "merdekai",
-      "category": [3]
+      "category": [
+        3
+      ]
     },
-
     {
       "show": true,
       "title": "Dipelajarin Code Editor",
@@ -114,7 +164,9 @@
         "Monaco Editor"
       ],
       "slug": "dipelajarin-code-editor",
-      "category": [2]
+      "category": [
+        2
+      ]
     },
     {
       "show": true,
@@ -131,9 +183,16 @@
         "/images/projects/alfabarokahjaya1.png",
         "/images/projects/alfabarokahjaya2.png"
       ],
-      "tech": ["NextJS", "Typescript", "Vercel", "Tailwind CSS"],
+      "tech": [
+        "NextJS",
+        "Typescript",
+        "Vercel",
+        "Tailwind CSS"
+      ],
       "slug": "alfa-barokah-jaya",
-      "category": [3]
+      "category": [
+        3
+      ]
     },
     {
       "show": true,
@@ -151,9 +210,16 @@
         "/images/projects/photobooth1.png",
         "/images/projects/photobooth2.png"
       ],
-      "tech": ["NextJS", "Typescript", "Tailwind CSS", "Zustand"],
+      "tech": [
+        "NextJS",
+        "Typescript",
+        "Tailwind CSS",
+        "Zustand"
+      ],
       "slug": "neo-photobooth",
-      "category": [3]
+      "category": [
+        3
+      ]
     },
     {
       "show": true,
@@ -179,7 +245,9 @@
         "Google Cloud Console"
       ],
       "slug": "kaloriku",
-      "category": [3]
+      "category": [
+        3
+      ]
     },
     {
       "show": true,
@@ -208,7 +276,9 @@
         "Google AI Studio"
       ],
       "slug": "jatahin",
-      "category": [3]
+      "category": [
+        3
+      ]
     },
     {
       "show": true,
@@ -225,9 +295,17 @@
         "/images/projects/old-porto1.png",
         "/images/projects/old-porto2.png"
       ],
-      "tech": ["ReactJS", "JavaScript", "Vercel", "GSAP", "Motion"],
+      "tech": [
+        "ReactJS",
+        "JavaScript",
+        "Vercel",
+        "GSAP",
+        "Motion"
+      ],
       "slug": "old-portofolio",
-      "category": [3]
+      "category": [
+        3
+      ]
     }
   ]
 }
