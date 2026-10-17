@@ -5,7 +5,7 @@ export type Project = {
   title: string;
   desc: string[];
   year: string;
-  preview: string;
+  preview?: string;
   code: string;
   Role: string;
   thumbnail: string;
